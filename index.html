@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <title>Italian Student Support – Forms</title>
+  <title>Italy - US Network</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -12,7 +12,7 @@
       background: #f5f5f5;
     }
     .container {
-      max-width: 700px;
+      max-width: 800px;
       margin: 60px auto;
       padding: 24px;
       background: white;
@@ -22,21 +22,26 @@
     }
     h1 {
       margin-bottom: 8px;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
     }
     p {
       margin-top: 0;
       color: #555;
+      line-height: 1.5;
     }
-    .buttons {
+    .forms-grid {
       margin-top: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+    .form-card p {
+      margin-bottom: 12px;
     }
     a.button {
       display: inline-block;
-      padding: 12px 20px;
+      padding: 10px 20px;
       border-radius: 999px;
       text-decoration: none;
       border: 1px solid #ccc;
@@ -49,6 +54,13 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       transform: translateY(-1px);
     }
+    .contact {
+      margin-top: 36px;
+      text-align: center;
+    }
+    .contact p {
+      margin-bottom: 12px;
+    }
     small {
       display: block;
       margin-top: 32px;
@@ -58,21 +70,45 @@
 </head>
 <body>
   <div class="container">
-    <h1>Italian Student Support</h1>
-    <p>Select one of the forms below.</p>
+    <h1>Italy - US Network</h1>
+    <p>
+      Siamo un gruppo di italiani che vivono negli Stati Uniti. Vogliamo condividere consigli e
+      opportunità con chi si trova in Italia e desidera fare un’esperienza di lavoro o di studio
+      negli Stati Uniti.
+    </p>
 
-    <div class="buttons">
-      
-      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdNwEMN-aguqylLgkup6RWaW9asYrmkp22yBGnAfewuz4ONTA/viewform?usp=sharing&ouid=117539378672285200149">
-        Form 1 – Applying from Italy
-      </a>
+    <div class="forms-grid">
+      <div class="form-card">
+        <p>
+          Compila questo form se ti trovi in Italia e cerchi consigli su come trovare
+          un’opportunità di lavoro o studio negli Stati Uniti.
+        </p>
+        <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdNwEMN-aguqylLgkup6RWaW9asYrmkp22yBGnAfewuz4ONTA/viewform?usp=sharing&ouid=117539378672285200149">
+          Form 1
+        </a>
+      </div>
 
-      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdK5RU0XXmDQKdtMbjItQ0TbN0jtTWZQCyJcf-U_Wr2Hx7SSg/viewform?usp=sharing&ouid=117539378672285200149">
-        Form 2 – Volunteers in the US
+      <div class="form-card">
+        <p>
+          Compila questo form se vivi negli Stati Uniti e sei disponibile a condividere consigli
+          ed esperienze con chi in Italia vorrebbe intraprendere un percorso simile al tuo.
+        </p>
+        <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdK5RU0XXmDQKdtMbjItQ0TbN0jtTWZQCyJcf-U_Wr2Hx7SSg/viewform?usp=sharing&ouid=117539378672285200149">
+          Form 2
+        </a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <p>
+        Contattaci se hai suggerimenti o vuoi condividere con noi il tuo feedback.
+      </p>
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSefgeRnTDePc67Ayya_dOQxoI6EaHyP4lTkLT0gRKQQ1tT8QQ/viewform?usp=sharing&ouid=117539378672285200149">
+        Contattaci
       </a>
     </div>
 
-    <small>This is a draft mock page for internal review.</small>
+    <small>Questo è un mockup per revisione interna.</small>
   </div>
 </body>
 </html>
